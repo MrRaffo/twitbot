@@ -7,6 +7,7 @@ the number of lines in the file:
 example:5:25
 
 Will read from a file called 'example', tweet line 5 out of 25, then update the datafile
-so it will read from line 6 next tweet
+so it will read from line 6 next tweet. It won't attempt to tweet past line 24 in this
+case.
 
 Provide your own text, use text.py to extract lines from a large body of text.

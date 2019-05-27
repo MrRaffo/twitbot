@@ -109,5 +109,4 @@ def tweet():
         curLine = curLine + 1
         update_datafile((textfile, curLine, numLines))
 
-#tweet()
-login_to_twitter()
+tweet()

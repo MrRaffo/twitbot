@@ -11,3 +11,7 @@ so it will read from line 6 next tweet. It won't attempt to tweet past line 24 i
 case.
 
 Provide your own text, use text.py to extract lines from a large body of text.
+
+This will attempt to login by reading login info from a file called 'login' in the same
+folder, with consumer-key, consumer-secret, access-key and access-secret each in that
+order on their own line.

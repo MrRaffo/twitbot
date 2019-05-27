@@ -1,6 +1,6 @@
 #!/bin/python3
 
-import os, math, time
+import os, math, time, tweepy
 
 file_dir = os.path.dirname(os.path.realpath(__file__)) + "/"
 TWEET_LEN = 240

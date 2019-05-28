@@ -1,5 +1,3 @@
-#!/bin/python3
-
 import os, math, time, tweepy
 
 file_dir = os.path.dirname(os.path.realpath(__file__)) + "/"
@@ -17,7 +15,7 @@ def login_to_twitter():
         ACCESS_KEY = login_data[2].strip('\n')
         ACCESS_SECRET = login_data[3].strip('\n')
 
-        auth = tweepy.0AuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+        auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
         auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
         api = tweepy.API(auth)
 
@@ -43,7 +41,7 @@ def split_quote(text, maxlen):
         return splits
 
 def post(msg, api):
-        
+       api.update_status(msg) 
 
 def parse_data_file():
         
